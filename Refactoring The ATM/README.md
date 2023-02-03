@@ -42,20 +42,20 @@ implementation and variable names as long as the expected behavior described is 
 This must be copied exactly for this activity to be evaluated correctly. Note the following characteristics about this code block:
   
 * The values for each option are "", "Deposit", and "Cash Back"
-* The ids on the <select> and <option> elements should not be changed in this example
+* The ids on the \<select\> and \<option\> elements should not be changed in this example
 * onChange sends the event to a function called handleModeSelect; you will need to create this function in a later step
  
 3. Create a function after handleSubmit called handleModeSelect, which takes the change event as an input. It will then:
 
-* Set the React state variable you created to be the event.target.value, where event would be the name of the function parameter passed in by the onChange in the <select> element added in Step 2
+* Set the React state variable you created to be the event.target.value, where event would be the name of the function parameter passed in by the onChange in the \<select\> element added in Step 2
 * write logic which takes that same event.target.value, which should be either "", "Deposit", or "Cash Back", and sets the isDeposit state value using the existing setIsDeposit() setter function. No change is needed in the isDeposit value if the event.target.value is an empty string. For the other two possible values, you should be able to figure out which value it should be set to.
 
 4. Remove the Deposit and Cash Back buttons from your JSX template. You no longer need them , because you set the isDeposit value in the handleModeSelect function.
 
-5. Create conditional rendering for the number input and submit fields. This means that they will not even show on the page before the user has selected an action (Deposit or Cash Back). To conditionally render a <div></div>, you would simply have a variable that is either truthy or falsy and use it in your JSX like the following example:
+5. Create conditional rendering for the number input and submit fields. This means that they will not even show on the page before the user has selected an action (Deposit or Cash Back). To conditionally render a \<div\>\</div\>, you would simply have a variable that is either truthy or falsy and use it in your JSX like the following example:
 
 ![menu001](https://user-images.githubusercontent.com/105542222/216723700-a3764801-38e2-40c5-b379-d9cf33284cfa.png)
   
-You will do the same except with your newly created atmMode variable and the remaining <ATMDeposit></ATMDeposit> element. After this step, there should be nothing showing below the <select> element if there is no mode selected.
+You will do the same except with your newly created atmMode variable and the remaining \<ATMDeposit\>\</ATMDeposit\> element. After this step, there should be nothing showing below the \<select\> element if there is no mode selected.
 
 After this step, you can test out the ATM after your refactor to ensure it is working as expected. If something is not working, check your work by adding console logs in the various handler functions. Simple tests you could do would be ensuring when you’ve selected the Deposit mode, inputted the number 5, and pressed Submit. Following this, the account balance will increase by $5. Same with the Cash Back mode but the account balance will decrease by $5.
