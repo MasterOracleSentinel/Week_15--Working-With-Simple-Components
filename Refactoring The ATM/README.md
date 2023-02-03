@@ -37,14 +37,8 @@ implementation and variable names as long as the expected behavior described is 
 
 2. In the return() function, below the <h2> element where the value is the status variable, add the following JSX code snippet.
 
-<! --- 
-<label>Select an action below to continue</label>
-<select onChange={(e) => handleModeSelect(e)} name="mode" id="mode-select">
-<option id="no-selection" value=""></option>
-<option id="deposit-selection" value="Deposit">Deposit</option>
-<option id="cashback-selection" value="Cash Back">Cash Back</option>
-</select>
---->
+![image](https://user-images.githubusercontent.com/105542222/216723252-09e237c7-a04e-4e86-9214-7bf95a955bd2.png)
+
   
 This must be copied exactly for this activity to be evaluated correctly. Note the following characteristics about this code block:
   
@@ -61,11 +55,7 @@ This must be copied exactly for this activity to be evaluated correctly. Note th
 
 5. Create conditional rendering for the number input and submit fields. This means that they will not even show on the page before the user has selected an action (Deposit or Cash Back). To conditionally render a <div></div>, you would simply have a variable that is either truthy or falsy and use it in your JSX like the following example:
 
-<! ---
-{
-  truthyOrFalsyVariable && <div>This div is conditionally rendered.</div>;
-}
---->
+![image](https://user-images.githubusercontent.com/105542222/216723386-aa59a0a5-e96e-4929-9679-68e600a82b63.png)
   
 You will do the same except with your newly created atmMode variable and the remaining <ATMDeposit></ATMDeposit> element. After this step, there should be nothing showing below the <select> element if there is no mode selected.
 
