@@ -35,9 +35,9 @@ implementation and variable names as long as the expected behavior described is 
 * Be initialized to "" (empty string)
 * Hold either "" (empty string), "Deposit", or "Cash Back" as the three possible transaction modes
 
-2. In the return() function, below the <h2> element where the value is the status variable, add the following JSX code snippet.
+2. In the return() function, below the "<h2>" element where the value is the status variable, add the following JSX code snippet.
 
-![image](https://user-images.githubusercontent.com/105542222/216723252-09e237c7-a04e-4e86-9214-7bf95a955bd2.png)
+![menu001](https://user-images.githubusercontent.com/105542222/216723700-a3764801-38e2-40c5-b379-d9cf33284cfa.png)
 
   
 This must be copied exactly for this activity to be evaluated correctly. Note the following characteristics about this code block:
