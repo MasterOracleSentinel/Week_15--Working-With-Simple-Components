@@ -7,8 +7,8 @@ Working With Simple Components, you’ll focus on two exercises that will teach 
 
 Learning Outcomes
 ------------------------------
-[ ] Course goals -- Course Learning Outcome Addressed
-[ ] Design and build UI components using React 
+[__]Course goals -- Course Learning Outcome Addressed
+[ ]Design and build UI components using React 
 
 --------------------------------------------
 module outcomes -- By the end of this module, you will be able to:
