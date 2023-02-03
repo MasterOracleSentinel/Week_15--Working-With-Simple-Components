@@ -7,46 +7,46 @@ Working With Simple Components, you’ll focus on two exercises that will teach 
 
 Learning Outcomes
 ------------------------------
-Course goals -- Course Learning Outcome Addressed
-Design and build UI components using React 
+[ ] Course goals -- Course Learning Outcome Addressed
+[ ] Design and build UI components using React 
 
 --------------------------------------------
 module outcomes -- By the end of this module, you will be able to:
 ----------------------------------------
-Implement user-friendly UI and React components
-Manage state of various UI elements
-Validate form content in conjunction with state of other components
-Practice communicating project specifications 
-Practice communicating technical decisions you made 
-Compare and contrast the functionality of Axios and fetch() for retrieving data
-Identify the steps required to fetch and render external data
-Identify the functionality of Axios and fetch()
-Use React to fetch, manipulate, and render data
+[ ] Implement user-friendly UI and React components
+[ ] Manage state of various UI elements
+[ ] Validate form content in conjunction with state of other components
+[ ] Practice communicating project specifications 
+[ ] Practice communicating technical decisions you made 
+[ ] Compare and contrast the functionality of Axios and fetch() for retrieving data
+[ ] Identify the steps required to fetch and render external data
+[ ] Identify the functionality of Axios and fetch()
+[ ] Use React to fetch, manipulate, and render data
 
 ----------------------------------
 
 Discussions
 ----------------------
-Share Your ATM Improvements
-Comparing Axios And Fetch()
-Fetch And Render Data Coding Challenge
+[ ] Share Your ATM Improvements
+[ ] Comparing Axios And Fetch()
+[ ] Fetch And Render Data Coding Challenge
 
 
 Coding Activities
 ------------------------------
-Refactoring The ATM
+[ ] Refactoring The ATM
 
 
 Coding Assignments
 ------------------------------
-Fetch And Paginate Data
+[ ] Fetch And Paginate Data
 
 
 Self-Study Activities
 ----------------------
-Map Hello World
-Map Markers
-Map Clustering
-Map Heatmap
-Map Animation
-Real-Time Bus Tracker
+[ ] Map Hello World
+[ ] Map Markers
+[ ] Map Clustering
+[ ] Map Heatmap
+[ ] Map Animation
+[ ] Real-Time Bus Tracker
