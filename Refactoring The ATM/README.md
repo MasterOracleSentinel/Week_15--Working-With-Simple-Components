@@ -35,10 +35,9 @@ implementation and variable names as long as the expected behavior described is 
 * Be initialized to "" (empty string)
 * Hold either "" (empty string), "Deposit", or "Cash Back" as the three possible transaction modes
 
-2. In the return() function, below the "<h2>" element where the value is the status variable, add the following JSX code snippet.
+2. In the return() function, below the \<"h2"\> element where the value is the status variable, add the following JSX code snippet.
 
-![menu001](https://user-images.githubusercontent.com/105542222/216723700-a3764801-38e2-40c5-b379-d9cf33284cfa.png)
-
+![menu002](https://user-images.githubusercontent.com/105542222/216724008-2e739b02-2e2e-49d2-a796-9888c5ce2671.png)
   
 This must be copied exactly for this activity to be evaluated correctly. Note the following characteristics about this code block:
   
@@ -55,7 +54,7 @@ This must be copied exactly for this activity to be evaluated correctly. Note th
 
 5. Create conditional rendering for the number input and submit fields. This means that they will not even show on the page before the user has selected an action (Deposit or Cash Back). To conditionally render a <div></div>, you would simply have a variable that is either truthy or falsy and use it in your JSX like the following example:
 
-![image](https://user-images.githubusercontent.com/105542222/216723386-aa59a0a5-e96e-4929-9679-68e600a82b63.png)
+![menu001](https://user-images.githubusercontent.com/105542222/216723700-a3764801-38e2-40c5-b379-d9cf33284cfa.png)
   
 You will do the same except with your newly created atmMode variable and the remaining <ATMDeposit></ATMDeposit> element. After this step, there should be nothing showing below the <select> element if there is no mode selected.
 
