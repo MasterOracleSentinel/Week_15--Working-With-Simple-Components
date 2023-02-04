@@ -32,4 +32,22 @@ Are you impressed by your peers’ improvements? Did you have similar challenges
 
 ------------------------------------
 
+# 2. Comparing Axios And Fetch
+![image](https://user-images.githubusercontent.com/105542222/216741156-30d2a098-8e40-461b-8dfa-dabbd958e0f6.png)
 
+## Learning Outcomes Addressed
+Compare and contrast the functionality of Axios and fetch() for retrieving data
+
+About Axios and fetch() 
+Axios and fetch() are tools that retrieve data from an external source via an HTTP request. They have key differences in: 
+
+Format of the data retrieved
+Protocol for requesting data
+Backward compatibility 
+
+Instructions
+
+Read the two articles linked below, that highlight the differences between Axios and fetch():
+
+* "Axios or fetch(): Which should you use?"
+link: https://blog.logrocket.com/axios-vs-fetch-best-http-requests/
