@@ -59,3 +59,67 @@ This must be copied exactly for this activity to be evaluated correctly. Note th
 You will do the same except with your newly created atmMode variable and the remaining \<ATMDeposit\>\</ATMDeposit\> element. After this step, there should be nothing showing below the \<select\> element if there is no mode selected.
 
 After this step, you can test out the ATM after your refactor to ensure it is working as expected. If something is not working, check your work by adding console logs in the various handler functions. Simple tests you could do would be ensuring when you’ve selected the Deposit mode, inputted the number 5, and pressed Submit. Following this, the account balance will increase by $5. Same with the Cash Back mode but the account balance will decrease by $5.
+
+
+## 2. ATM Improvements Task 2 - Input Validation 
+-------------------------------------------------
+
+Now that you have refactored the ATM to use a \<select\> field rather than the Deposit and Cash Back buttons, you can now implement the functional improvement mentioned above, i.e., input validation.
+
+1. Add a variable to React state to track whether the transaction is valid. For the scope of this activity, the only transactions considered 
+invalid will be a Cash Back transaction, where the inputted number exceeds the current account balance.
+Add the following line underneath the other React.useState() function calls:
+
+![menu003](https://user-images.githubusercontent.com/105542222/216740474-37973973-2b2c-4607-94b4-df7d7c2a7b0a.png)
+
+2. Note that initially, validTransaction will be set to false
+Send the value of validTransaction to the \<ATMDeposit\> component as a parameter
+
+3. Prevent an invalid value from being submitted to \<ATMDeposit\>
+
+* On the declaration of the \<ATMDeposit\> component, use object destructuring to add a prop called isValid
+* In the \<ATMDeposit\> component JSX, add a disabled HTML attribute on the submit input element
+* Use isValid to set the disabled attribute
+* In the implementation of the \<ATMDeposit\> component, use the return value of setValidTransaction to set the value of the isValid prop
+
+Hint: You can use a logical NOT (!) to turn a true value into a false value.
+
+4. Add logic to the handleChange() function to check the validity of the form.
+
+* Execute setValidTransaction(false) and return if the event.target.value is less than or equal to 0
+* If the atmMode is Cash Back and the event.target.value is greater than totalState, execute setValidTransaction(false), otherwise execute setValidTransaction(true) to allow form submission
+
+Your ATM improvements are now complete. To test the functionality of your code, go to the next page.
+-----------------------------------------------
+
+## 3. Testing the Work
+The following test cases should have the specified results. You can run through these before submitting to ensure you’ve covered everything.
+
+Test 1: Refresh browser -> Select Deposit -> Enter 10 -> Select Submit
+Result 1: Submit button should be enabled and Account Balance should show $10.
+
+Test 2: Refresh browser -> Select Cash Back -> Enter 10
+Result 2: Submit button should be disabled.
+
+Test 3: Refresh browser -> Select nothing
+Result 3: The following should be all that is showing with the conditional rendering:
+
+![image](https://user-images.githubusercontent.com/105542222/216740668-64685a9b-a66c-4950-965a-0d82218ce5bd.png)
+
+Test 4: Refresh browser -> Select Deposit -> Enter 100 -> Press Submit -> Press Submit again -> Change mode to Cash Back -> Change input value to 50 -> Press Submit
+Result 4: Account Balance should now show $150.
+In the same way, this activity looks at the existing ATM app, identifies improvements, and implements them. What would your own improvements to this version be?
+
+Hints:
+
+* Your variable names don’t need to exactly match the examples. Feel free to name them any way you like as long as you correctly access them to create the functionality described.
+
+* If you get stuck and something isn’t working, be sure to put in console.logs to check what values are actually stored in the variables.
+
+* To check whether the inputted number field is greater than totalState, remember to change it to number type by doing Number(event.target.value). This will allow you to use math operators such as > or < on it.
+
+![image](https://user-images.githubusercontent.com/105542222/216740730-f45387f2-31e7-439b-9c96-a7d72d7978f8.png)
+
+![image](https://user-images.githubusercontent.com/105542222/216740763-bf16a9ce-8aec-49d2-b9d1-21a009341b73.png)
+
+
