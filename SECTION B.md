@@ -51,4 +51,4 @@ Read the two articles linked below, that highlight the differences between Axios
 
 * "Axios or fetch(): Which should you use?"
 
-- link: https://blog.logrocket.com/axios-vs-fetch-best-http-requests/
+-- link: https://blog.logrocket.com/axios-vs-fetch-best-http-requests/
