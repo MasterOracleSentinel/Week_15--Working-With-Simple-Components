@@ -118,8 +118,9 @@ Hints:
 
 * To check whether the inputted number field is greater than totalState, remember to change it to number type by doing Number(event.target.value). This will allow you to use math operators such as > or < on it.
 
-![image](https://user-images.githubusercontent.com/105542222/216740730-f45387f2-31e7-439b-9c96-a7d72d7978f8.png)
+![task_menu001](https://user-images.githubusercontent.com/105542222/216740865-a6132a3f-2a93-4010-bc9f-ebe29a8b272a.png)
 
-![image](https://user-images.githubusercontent.com/105542222/216740763-bf16a9ce-8aec-49d2-b9d1-21a009341b73.png)
+
+![task_menu002](https://user-images.githubusercontent.com/105542222/216740812-6ab55172-6ad1-49fe-adad-9d61bdec3b29.png)
 
 
